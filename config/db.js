@@ -1,17 +1,13 @@
-const mongoose=require("mongoose")
+const mongoose=require("mongoose");
+mongoose.connect("mongodb://localhost:27017/rakhi")
 
-mongoose.connect("mongodb://localhost:27017/user")
-
-const db=mongoose.connection;
-
+const db= mongoose.connection
 
 db.on("connected",(err,data)=>{
-    if(err)
-    {
-        console.log("err")
+    if(err){
+        console.log("error")
     }
     else{
-        console.log("database connect")
-    }
-
+        console.log("database connected")
+}
 })

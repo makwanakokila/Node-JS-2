@@ -1,0 +1,62 @@
+/* Modern Dashboard Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 65, 108, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 6px 14px rgba(255, 65, 108, 0.4);
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

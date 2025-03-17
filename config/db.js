@@ -1,13 +1,16 @@
-const mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost:27017/rakhi")
+const mongoose = require('mongoose');
 
-const db= mongoose.connection
+mongoose.connect('mongodb://localhost:27017/nodejs')
+   
+const db = mongoose.connection
 
-db.on("connected",(err,data)=>{
-    if(err){
-        console.log("error")
+db.on('connected', (err, data) => {
+    if (err) {
+        console.log('err');
     }
-    else{
-        console.log("database connected")
-}
-})
+    else {
+        console.log('database connected')
+    }
+});
+
+module.exports = mongoose;
